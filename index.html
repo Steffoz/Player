@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Il Mio Centro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Il Mio Centro</h1>
+    <nav>
+      <button onclick="showSection('progetti')">Progetti</button>
+      <button onclick="showSection('calendario')">Calendario</button>
+      <button onclick="showSection('note')">Note</button>
+      <button onclick="showSection('orologio')">Orologio</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="progetti" class="content-section">
+      <h2>Progetti</h2>
+      <textarea id="progettiText" placeholder="Scrivi i tuoi progetti..."></textarea>
+    </section>
+
+    <section id="calendario" class="content-section hidden">
+      <h2>Calendario</h2>
+      <input type="date" />
+    </section>
+
+    <section id="note" class="content-section hidden">
+      <h2>Note</h2>
+      <textarea id="noteText" placeholder="Scrivi le tue note..."></textarea>
+    </section>
+
+    <section id="orologio" class="content-section hidden">
+      <h2>Orologio</h2>
+      <div id="clock">--:--:--</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
